@@ -1,0 +1,31 @@
+.error-page .error-page-inner {
+	color: #fff;
+	font-size: 14px;
+}
+.error-page .error-page-inner .error-code {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 35px;
+}
+.error-page .error-page-inner .error-message {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.error-page .error-page-inner .btn-backhome {
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #28b7e9;
+	transition: all .3s;
+}
+.error-page .error-page-inner .btn-backhome:hover {
+	opacity: 0.8;
+}
+
+
+@media (max-width: 767px) {
+	.error-page .error-code {
+		font-size: 36px;
+	}
+}

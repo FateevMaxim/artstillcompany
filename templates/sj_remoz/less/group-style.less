@@ -1,0 +1,47 @@
+// FILE: GROUP - STYLE //
+.title-underline, .browse-view .cate-title, .category-view > h1.cate-title{
+	color: #222;
+	font-weight: 700;
+	padding: 0 0 1.5rem;
+	margin: 0 0 1.5rem;
+	line-height: 100%;
+	border-bottom: 1px solid #ddd;
+	background-color: transparent;
+	font-size: 16px;
+	text-transform: uppercase;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		height: 1px;
+		width: 100px;
+		position: absolute;
+		left: 0px;
+		bottom: -1px;
+		background: #fe8e0d;
+	}
+}
+
+.category-view h1.cate-title{
+	margin-top: 3rem;
+}
+
+
+.sale_price{
+	position: absolute;
+	top: 14px;
+	text-transform: uppercase;
+	color: #fff !important;
+	z-index: 2;
+	width: 44px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 11px !important;
+	font-weight: 400;
+	background: #ff4b58;
+	left: 10px;
+}

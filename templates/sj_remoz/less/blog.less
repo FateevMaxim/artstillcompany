@@ -1,0 +1,432 @@
+body{
+
+	.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .sppb-col-xs-1, .sppb-col-sm-1, .sppb-col-md-1, .sppb-col-lg-1, .sppb-col-xs-2, .sppb-col-sm-2, .sppb-col-md-2, .sppb-col-lg-2, .sppb-col-xs-3, .sppb-col-sm-3, .sppb-col-md-3, .sppb-col-lg-3, .sppb-col-xs-4, .sppb-col-sm-4, .sppb-col-md-4, .sppb-col-lg-4, .sppb-col-xs-5, .sppb-col-sm-5, .sppb-col-md-5, .sppb-col-lg-5, .sppb-col-xs-6, .sppb-col-sm-6, .sppb-col-md-6, .sppb-col-lg-6, .sppb-col-xs-7, .sppb-col-sm-7, .sppb-col-md-7, .sppb-col-lg-7, .sppb-col-xs-8, .sppb-col-sm-8, .sppb-col-md-8, .sppb-col-lg-8, .sppb-col-xs-9, .sppb-col-sm-9, .sppb-col-md-9, .sppb-col-lg-9, .sppb-col-xs-10, .sppb-col-sm-10, .sppb-col-md-10, .sppb-col-lg-10, .sppb-col-xs-11, .sppb-col-sm-11, .sppb-col-md-11, .sppb-col-lg-11, .sppb-col-xs-12, .sppb-col-sm-12, .sppb-col-md-12, .sppb-col-lg-12,
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.row,
+	.sppb-row, .sp-pagebuilder-row {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+
+}
+
+.pagenav li a [class^="icon-"] {
+	display: none;
+}
+
+.entry-gallery{
+	.owl2-carousel .owl2-stage-outer{
+		direction: ltr;
+	}
+	.owl2-controls{
+		.owl2-nav{  
+			.owl2-prev,
+			.owl2-next{       
+				background-color: rgba(0,0,0,0.5);
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				top: 50%;
+				margin-top: -15px;
+				text-align: center;
+				line-height: 32px;
+				&:before{
+					color: #fff;				
+				}			
+				&:hover{
+					background-color: @color;		
+				} 
+			}
+			.owl2-next{
+				right: 0;			
+				&:before{
+					.font-awesome(f105,20px);
+				}
+			}
+			.owl2-prev{	
+				left: 0;			
+				&:before{
+					.font-awesome(f104,20px);
+				}
+			}
+		}
+	}
+}
+
+.cat-children{
+	font-size: 14px;
+	h3{
+		font-size: 14px;
+	}
+}
+.blog {
+	.item {
+		.entry-image{
+			img{
+				border-radius: 3px;
+			}
+		}
+		.entry-thumbnail {
+			position: relative;
+			a{
+				img{
+					border-radius: 3px;
+				}
+			}
+			&:hover{
+				img{
+					opacity: 0.85;
+				}
+			}
+		}
+		
+		.readmore {
+			margin-top: 0px;
+			.btn-readmore {
+				font-size: 13px;
+				text-transform: uppercase;
+				&:after{
+					font-family: @font-FontAwesome; 
+					content: "\f101";
+				};
+			}
+		}
+		.blockquote {
+			border: 0;
+			background-color: #f5f5f5;
+			padding: 30px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 14px;
+			font-style: italic;
+		}
+		.article-footer-wrap {
+			margin-top: 30px;
+			.article-footer-top {
+				.helix-social-share {
+					.helix-social-share-icon {
+						ul {
+							li {
+								a{
+									color: #fff;
+									height: 40px;
+									padding: 0;
+									line-height: 40px;
+									width: 40px;
+									&.facebook {
+										background-color: #3a5897;
+									}
+									&.twitter {
+										background-color: #2fc2ee;
+									}
+									&.gplus {
+										background-color: #e14a3c;
+									}
+									&.linkedin {
+										background-color: #1a3562;
+									}
+								}
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+	.items-more {
+		background-color: #f4f4f4;
+		border-radius: 6px;
+		margin-bottom: 30px;
+		padding: 15px;
+		ol {
+			padding: 0 10px;
+			margin-bottom: 0;
+			li {
+				a {
+					display: block;
+					padding:  5px;
+					color: #666;
+					&:hover{color:@color;};
+				}
+			}
+		}
+	}
+}
+
+#sp-breadcrumb {
+	padding-top: 1.5rem;
+	padding-bottom: .5rem;
+	.last-breadcrumb {
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 15px;
+		margin-top: 0;
+	}
+	.breadcrumb {
+		background-color: transparent;
+		margin: 0;
+		font-size: 14px;
+		padding: 0;
+		> li {
+			margin-bottom: 1rem;
+			&:first-child{
+				padding-left: 10px;
+				border-left: 1px solid #ddd;
+				margin: 0;
+				&:before{
+					content: none;
+				}
+			}
+			height: 25px;
+			line-height: 22px;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			position: relative;
+			padding: 0 8px 0 18px;
+			margin-left: 3px;
+			font-size: 12px;
+			&:before , &:after{
+				border-right: 1px solid #ddd;
+				border-top: 1px solid #ddd;
+				content: "";
+				display: inline-block;
+				height: 17px;
+				position: absolute;
+				top: 3px;
+				transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				width: 17px;
+			}
+			&:before{
+				left: -8px;
+			}
+			&:after{
+				right: -8px;
+			}
+			&:not(:last-child):hover{
+				border-color: @color;
+				&:before, &:after{
+					border-color: @color;
+				}
+			}
+			a{
+				color: #666;
+			}
+		}
+	}
+}
+
+// SEARCH
+#sp-main-menu #search-top-bar{margin-top: 10px; text-align:right;}
+#search-top-bar {
+
+	.form-search { 
+		position: relative;z-index: 1;
+		> .form-group{
+			margin-bottom: 0;
+		}
+		.search-query {
+			width: 100%; background:none;
+			border:none; box-shadow: none;
+		}
+		.btn-search {
+			border:none; background: none;
+			position: absolute;
+			right: 0;
+			padding: 5px 10px;
+			border-radius: 3px;
+			&:hover{color: @color;}
+		}
+	}
+}
+.search-aside-top{ 
+	border:1px solid #e1e1e1; 
+}
+.about-author{
+	margin-top: 2rem;
+	.archies-sidebar{
+		&:hover{
+			img{
+				opacity: 0.85;
+			}
+		}
+		p{
+			padding: 0px;
+			margin: 20px 0 46px;
+			text-align: left;
+			line-height: 34px;
+		}
+	}
+}
+.sppb-addon-archives{
+	.archies-sidebar{
+		margin-bottom: 3rem;
+		.list-cat{
+			padding: 0;
+			list-style: none;
+			li{
+				display: inline-block;
+				width: 100%;
+				border-bottom: 1px solid #e1e1e1;
+				a{
+					color: #666;
+					display: inline-block;
+					padding: 10px 20px 10px;
+					position: relative;
+					font-size: 14px;
+					font-family: "Roboto",sans-serif;
+					&:hover{
+						color: @color;
+					}
+					&:before{
+						content: "\f073";
+						position: absolute;
+						left: 0px;
+						top: 8px;
+						font-family: "FontAwesome";
+					}
+				}
+			}
+		}
+	}
+}
+
+.pagination-wrapper {
+	text-align: center;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	.pagination {
+		li {
+			display: inline-block;
+			padding: 0 5px;
+			&:first-child,&:last-child{
+				a{
+					font-weight: 700;
+				}
+			}
+			a, span {
+				border-radius: 0;
+				min-width: 40px;
+				height: 40px;
+				line-height: 38px;
+				border: 1px solid #eaeaea;
+				padding: 0 10px;
+				color: #464646;
+				text-align: center;
+				display: block;
+				font-size: 14px;
+				text-transform: uppercase;
+				margin: 0;
+
+			}
+			&.active, &:hover {
+				a, span {
+					color: #fff;
+					background-color: @color;
+					border-color: @color;
+				}
+			}
+		}
+	}
+}
+
+/*===================== BLOCK SIDEBAR ====================*/
+/*=========================================================*/
+
+//Blog
+.blog{
+	.entry-header{
+		h2{
+			font-size: 2rem;
+		}
+	}
+	.item{
+		.readmore{
+			.btn-readmore{
+				position:relative;
+				text-transform: capitalize;
+				color: @color;
+				padding: 5px 0;
+				&:hover{
+					color: #000;
+					transition: all 0.25s ease-in-out;
+					transform: translate(-50%,50px) ;
+				}
+				&::before{
+					content: "\f0da";
+					font-family: 'FontAwesome';
+				}
+				&::after{
+					content: "";
+				}
+			}
+		}
+	}
+	.article-info{
+		.published,
+		.createdby{
+			font-size: 13px;
+		}
+	}
+}
+// Latest Blog
+.sj-extraslider{
+	.extraslider-inner{
+		padding-top: 28px;
+		&.owl-carousel.owl-loaded{
+			border: none;
+			outline: none;
+		}
+		.item{
+			.item-wrap.style2{
+				.item-wrap-inner{
+					.item-image{
+						width: 100%;
+						a{
+							img{
+								border-radius: 3px;
+							}
+						}
+					}
+					.item-info{					
+						background-color: transparent;
+						.item-title{
+							font-family: "Roboto", sans-serif;
+							text-transform: inherit;
+							font-size: 16px;
+							padding: 10px 0 0 0;
+							a{
+								color: #222;
+								&:hover{
+									color: @color;
+								}
+							}
+						}
+						.item-content{
+							margin-top: 0px;
+							.bs-cat-date{
+								color: #999;
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.owl-controls{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}
+
+
+/*===================== END BLOCK SIDEBAR ====================*/
+/*=========================================================*/

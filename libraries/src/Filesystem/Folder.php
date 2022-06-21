@@ -236,7 +236,7 @@ abstract class Folder
 		else
 		{
 			// We need to get and explode the open_basedir paths
-			$obd = ini_get('open_basedir');
+			//$obd = ini_get('open_basedir');
 
 			// If open_basedir is set we need to get the open_basedir that the path is in
 			if ($obd != null)
